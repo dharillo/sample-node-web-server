@@ -1,0 +1,33 @@
+{
+  "name": "sample-node-web-server",
+  "version": "1.0.0",
+  "description": "Sample expressjs server",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "sample",
+    "expressjs"
+  ],
+  "author": "David Harillo Sánchez",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.0.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dharillo/sample-node-web-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dharillo/sample-node-web-server/issues"
+  },
+  "homepage": "https://github.com/dharillo/sample-node-web-server#readme",
+  "devDependencies": {
+    "eslint": "^6.2.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2"
+  }
+}
