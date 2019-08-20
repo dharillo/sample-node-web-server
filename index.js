@@ -1,10 +1,9 @@
 const express = require('express');
-const { spawn } = require('child_process');
 const { join } = require('path');
 const hbs = require('hbs');
 const fs = require('fs');
 
-const SERVER_PORT = 3000;
+const SERVER_PORT = process.env.PORT || 3000;
 
 /**
  * Gets the current year
@@ -57,7 +56,5 @@ app
   });
 
 app.listen(SERVER_PORT, () => {
-  const serverUrl = `http://localhost:${SERVER_PORT}`;
-  console.log(`Server running at ${serverUrl}`);
-  spawn('open', [serverUrl]);
+  console.log(`Server is up on port ${SERVER_PORT}`);
 });
